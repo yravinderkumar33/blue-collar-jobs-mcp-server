@@ -1,14 +1,16 @@
 {
   "name": "mcp-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "MCP Server for Blue Collar Jobs Platform",
+  "main": "dist/jobs-mcp.js",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "jobs-mcp": "ts-node src/jobs-mcp.ts",
     "build": "tsc --outDir dist",
+    "build:jobs-mcp": "tsc src/jobs-mcp.ts --outDir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["mcp", "jobs", "blue-collar", "employment"],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -20,5 +22,8 @@
     "@types/node": "^22.15.29",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "bin": {
+    "jobs-mcp": "dist/jobs-mcp.js"
   }
 }

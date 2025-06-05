@@ -2,10 +2,13 @@ import express from 'express';
 import mongoose from 'mongoose';
 import jobsRouter from './routes/jobs';
 import { buildResponsePayload } from './utils/response';
+import cors from 'cors';
 
 const app = express();
 
 app.use(express.json());
+
+app.use(cors());
 
 // MongoDB connection (update URI as needed)
 mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/jobs', {

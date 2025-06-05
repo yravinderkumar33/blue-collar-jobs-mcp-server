@@ -9,6 +9,13 @@ router.post(
   jobsController.searchJobs
 );
 
+// 4. Get All Job Applications
+router.get(
+  '/applications',
+  jobsController.getAllApplications
+);
+
+
 // 2. View Job Detail
 router.get(
   '/:job_id',
@@ -20,5 +27,7 @@ router.post(
   '/:job_id/apply',
   jobsController.applyToJob
 );
+
+
 
 export default router; 

@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "604b179c-1d07-43e2-bfa8-0e95254e41a3",
+		"name": "jobs-mcp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5394404"
+	},
+	"item": [
+		{
+			"name": "seach jobs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"request\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/jobs/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"jobs",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "seach jobs",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/jobs/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"jobs",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13735"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"35a7-Q+JOfq3jpJEwq+06raEbPi3KezU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 15:01:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"api.jobs.search\",\n    \"ver\": \"1.0\",\n    \"ets\": 1749049264400,\n    \"params\": {\n        \"msgid\": \"001a2770-1b4a-49f9-9b1b-0c230b299eac\",\n        \"err\": \"\",\n        \"status\": \"SUCCESSFUL\",\n        \"errmsg\": \"\"\n    },\n    \"responseCode\": \"OK\",\n    \"result\": {\n        \"jobs\": [\n            {\n                \"_id\": \"68405f8a368701dcb24c8f7f\",\n                \"jobId\": \"JOB-1001-DEL\",\n                \"title\": \"Delivery Executive (Two-Wheeler Required)\",\n                \"description\": \"We are hiring delivery executives to deliver parcels across Bengaluru city. Applicants must own a two-wheeler and a valid driving license.\",\n                \"category\": \"Logistics\",\n                \"jobType\": \"full_time\",\n                \"company\": {\n                    \"name\": \"SwiftDeliver Pvt Ltd\",\n                    \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                    \"industry\": \"Logistics\"\n                },\n                \"location\": {\n                    \"address\": \"7th Main, Indiranagar\",\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"postalCode\": \"560038\",\n                    \"latitude\": 12.9716,\n                    \"longitude\": 77.5946\n                },\n                \"requirements\": {\n                    \"experienceInYears\": 2,\n                    \"gender\": \"male\",\n                    \"education\": [\n                        \"XII\"\n                    ],\n                    \"certifications\": [],\n                    \"skills\": [\n                        \"Driving\",\n                        \"Navigation\",\n                        \"Customer Interaction\"\n                    ],\n                    \"languages\": [\n                        \"Hindi\",\n                        \"Kannada\",\n                        \"Basic English\"\n                    ],\n                    \"assetsRequired\": [\n                        \"Two-wheeler\",\n                        \"Smartphone\",\n                        \"Valid DL\"\n                    ]\n                },\n                \"responsibilities\": [\n                    \"Pick up and deliver packages as per route plan\",\n                    \"Collect COD payments from customers\",\n                    \"Maintain delivery logs via mobile app\"\n                ],\n                \"salary\": {\n                    \"amount\": 18000,\n                    \"currency\": \"INR\",\n                    \"frequency\": \"monthly\"\n                },\n                \"schedule\": {\n                    \"shiftType\": \"day\",\n                    \"hoursPerWeek\": 40,\n                    \"daysOfWeek\": [\n                        \"monday\",\n                        \"tuesday\",\n                        \"wednesday\",\n                        \"thursday\",\n                        \"friday\"\n                    ],\n                    \"startTime\": \"07:00\",\n                    \"endTime\": \"15:30\",\n                    \"overtimeAvailable\": true,\n                    \"weekendWork\": false\n                },\n                \"benefits\": [\n                    \"health_insurance\",\n                    \"dental_insurance\",\n                    \"paid_time_off\",\n                    \"workers_compensation\",\n                    \"tools_provided\",\n                    \"uniform_provided\",\n                    \"training_provided\",\n                    \"career_advancement\"\n                ],\n                \"postedDate\": \"2025-06-01T10:00:00Z\",\n                \"validUntil\": \"2025-06-15T23:59:59Z\",\n                \"metadata\": {\n                    \"tags\": [\n                        \"delivery\",\n                        \"bike\",\n                        \"fresher_friendly\",\n                        \"bangalore\"\n                    ]\n                },\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"68405f8a368701dcb24c8f80\",\n                \"jobId\": \"JOB-1002-WHS\",\n                \"title\": \"Warehouse Associate\",\n                \"description\": \"Join our warehouse team to manage inventory, packing, and dispatch. Prior experience in warehouse operations preferred.\",\n                \"category\": \"Warehouse\",\n                \"jobType\": \"full_time\",\n                \"company\": {\n                    \"name\": \"SwiftDeliver Pvt Ltd\",\n                    \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                    \"industry\": \"Logistics\"\n                },\n                \"location\": {\n                    \"address\": \"Whitefield Industrial Area\",\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"postalCode\": \"560066\",\n                    \"latitude\": 12.9698,\n                    \"longitude\": 77.7499\n                },\n                \"requirements\": {\n                    \"experienceInYears\": 1,\n                    \"gender\": \"any\",\n                    \"education\": [\n                        \"X\"\n                    ],\n                    \"certifications\": [],\n                    \"skills\": [\n                        \"Inventory Management\",\n                        \"Packing\",\n                        \"Teamwork\"\n                    ],\n                    \"languages\": [\n                        \"Hindi\",\n                        \"Kannada\"\n                    ],\n                    \"assetsRequired\": [\n                        \"None\"\n                    ]\n                },\n                \"responsibilities\": [\n                    \"Manage inventory\",\n                    \"Pack and dispatch orders\",\n                    \"Maintain cleanliness\"\n                ],\n                \"salary\": {\n                    \"amount\": 15000,\n                    \"currency\": \"INR\",\n                    \"frequency\": \"monthly\"\n                },\n                \"schedule\": {\n                    \"shiftType\": \"day\",\n                    \"hoursPerWeek\": 48,\n                    \"daysOfWeek\": [\n                        \"monday\",\n                        \"tuesday\",\n                        \"wednesday\",\n                        \"thursday\",\n                        \"friday\",\n                        \"saturday\"\n                    ],\n                    \"startTime\": \"09:00\",\n                    \"endTime\": \"18:00\",\n                    \"overtimeAvailable\": false,\n                    \"weekendWork\": true\n                },\n                \"benefits\": [\n                    \"health_insurance\",\n                    \"paid_time_off\",\n                    \"uniform_provided\"\n                ],\n                \"postedDate\": \"2025-06-02T09:00:00Z\",\n                \"validUntil\": \"2025-06-16T23:59:59Z\",\n                \"metadata\": {\n                    \"tags\": [\n                        \"warehouse\",\n                        \"packing\",\n                        \"inventory\",\n                        \"bangalore\"\n                    ]\n                },\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"68405f8a368701dcb24c8f81\",\n                \"jobId\": \"JOB-1003-DRI\",\n                \"title\": \"Driver (Light Commercial Vehicle)\",\n                \"description\": \"Looking for experienced drivers to operate light commercial vehicles for intra-city deliveries.\",\n                \"category\": \"Logistics\",\n                \"jobType\": \"full_time\",\n                \"company\": {\n                    \"name\": \"SwiftDeliver Pvt Ltd\",\n                    \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                    \"industry\": \"Logistics\"\n                },\n                \"location\": {\n                    \"address\": \"Koramangala\",\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"postalCode\": \"560034\",\n                    \"latitude\": 12.9352,\n                    \"longitude\": 77.6245\n                },\n                \"requirements\": {\n                    \"experienceInYears\": 3,\n                    \"gender\": \"male\",\n                    \"education\": [\n                        \"X\"\n                    ],\n                    \"certifications\": [\n                        \"Commercial DL\"\n                    ],\n                    \"skills\": [\n                        \"Driving\",\n                        \"Navigation\"\n                    ],\n                    \"languages\": [\n                        \"Hindi\",\n                        \"Kannada\",\n                        \"English\"\n                    ],\n                    \"assetsRequired\": [\n                        \"Commercial DL\"\n                    ]\n                },\n                \"responsibilities\": [\n                    \"Drive company vehicles\",\n                    \"Ensure timely deliveries\",\n                    \"Vehicle maintenance checks\"\n                ],\n                \"salary\": {\n                    \"amount\": 20000,\n                    \"currency\": \"INR\",\n                    \"frequency\": \"monthly\"\n                },\n                \"schedule\": {\n                    \"shiftType\": \"day\",\n                    \"hoursPerWeek\": 48,\n                    \"daysOfWeek\": [\n                        \"monday\",\n                        \"tuesday\",\n                        \"wednesday\",\n                        \"thursday\",\n                        \"friday\",\n                        \"saturday\"\n                    ],\n                    \"startTime\": \"08:00\",\n                    \"endTime\": \"17:00\",\n                    \"overtimeAvailable\": true,\n                    \"weekendWork\": true\n                },\n                \"benefits\": [\n                    \"health_insurance\",\n                    \"paid_time_off\",\n                    \"tools_provided\"\n                ],\n                \"postedDate\": \"2025-06-03T08:00:00Z\",\n                \"validUntil\": \"2025-06-17T23:59:59Z\",\n                \"metadata\": {\n                    \"tags\": [\n                        \"driver\",\n                        \"commercial\",\n                        \"delivery\",\n                        \"bangalore\"\n                    ]\n                },\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"68405f8a368701dcb24c8f82\",\n                \"jobId\": \"JOB-1004-SEC\",\n                \"title\": \"Security Guard\",\n                \"description\": \"Responsible for maintaining security and safety at the warehouse premises.\",\n                \"category\": \"Security\",\n                \"jobType\": \"full_time\",\n                \"company\": {\n                    \"name\": \"SwiftDeliver Pvt Ltd\",\n                    \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                    \"industry\": \"Logistics\"\n                },\n                \"location\": {\n                    \"address\": \"Peenya Industrial Area\",\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"postalCode\": \"560058\",\n                    \"latitude\": 13.0285,\n                    \"longitude\": 77.5151\n                },\n                \"requirements\": {\n                    \"experienceInYears\": 2,\n                    \"gender\": \"male\",\n                    \"education\": [\n                        \"X\"\n                    ],\n                    \"certifications\": [],\n                    \"skills\": [\n                        \"Vigilance\",\n                        \"Reporting\"\n                    ],\n                    \"languages\": [\n                        \"Kannada\",\n                        \"Hindi\"\n                    ],\n                    \"assetsRequired\": [\n                        \"None\"\n                    ]\n                },\n                \"responsibilities\": [\n                    \"Monitor premises\",\n                    \"Check visitor entry\",\n                    \"Report incidents\"\n                ],\n                \"salary\": {\n                    \"amount\": 14000,\n                    \"currency\": \"INR\",\n                    \"frequency\": \"monthly\"\n                },\n                \"schedule\": {\n                    \"shiftType\": \"night\",\n                    \"hoursPerWeek\": 48,\n                    \"daysOfWeek\": [\n                        \"monday\",\n                        \"tuesday\",\n                        \"wednesday\",\n                        \"thursday\",\n                        \"friday\",\n                        \"saturday\"\n                    ],\n                    \"startTime\": \"20:00\",\n                    \"endTime\": \"05:00\",\n                    \"overtimeAvailable\": false,\n                    \"weekendWork\": true\n                },\n                \"benefits\": [\n                    \"health_insurance\",\n                    \"uniform_provided\"\n                ],\n                \"postedDate\": \"2025-06-04T20:00:00Z\",\n                \"validUntil\": \"2025-06-18T23:59:59Z\",\n                \"metadata\": {\n                    \"tags\": [\n                        \"security\",\n                        \"night_shift\",\n                        \"warehouse\",\n                        \"bangalore\"\n                    ]\n                },\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"68405f8a368701dcb24c8f83\",\n                \"jobId\": \"JOB-1005-CLN\",\n                \"title\": \"Cleaner\",\n                \"description\": \"Maintain cleanliness and hygiene in the warehouse and office areas.\",\n                \"category\": \"Maintenance\",\n                \"jobType\": \"part_time\",\n                \"company\": {\n                    \"name\": \"SwiftDeliver Pvt Ltd\",\n                    \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                    \"industry\": \"Logistics\"\n                },\n                \"location\": {\n                    \"address\": \"HSR Layout\",\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"postalCode\": \"560102\",\n                    \"latitude\": 12.9141,\n                    \"longitude\": 77.6387\n                },\n                \"requirements\": {\n                    \"experienceInYears\": 0,\n                    \"gender\": \"any\",\n                    \"education\": [\n                        \"None\"\n                    ],\n                    \"certifications\": [],\n                    \"skills\": [\n                        \"Cleaning\",\n                        \"Time Management\"\n                    ],\n                    \"languages\": [\n                        \"Kannada\"\n                    ],\n                    \"assetsRequired\": [\n                        \"None\"\n                    ]\n                },\n                \"responsibilities\": [\n                    \"Clean office and warehouse\",\n                    \"Dispose waste\",\n                    \"Restock supplies\"\n                ],\n                \"salary\": {\n                    \"amount\": 9000,\n                    \"currency\": \"INR\",\n                    \"frequency\": \"monthly\"\n                },\n                \"schedule\": {\n                    \"shiftType\": \"day\",\n                    \"hoursPerWeek\": 24,\n                    \"daysOfWeek\": [\n                        \"monday\",\n                        \"tuesday\",\n                        \"wednesday\",\n                        \"thursday\",\n                        \"friday\",\n                        \"saturday\"\n                    ],\n                    \"startTime\": \"10:00\",\n                    \"endTime\": \"14:00\",\n                    \"overtimeAvailable\": false,\n                    \"weekendWork\": false\n                },\n                \"benefits\": [\n                    \"uniform_provided\"\n                ],\n                \"postedDate\": \"2025-06-05T10:00:00Z\",\n                \"validUntil\": \"2025-06-19T23:59:59Z\",\n                \"metadata\": {\n                    \"tags\": [\n                        \"cleaning\",\n                        \"maintenance\",\n                        \"part_time\",\n                        \"bangalore\"\n                    ]\n                },\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"68405f8a368701dcb24c8f84\",\n                \"jobId\": \"JOB-1006-CSR\",\n                \"title\": \"Customer Service Representative\",\n                \"description\": \"Handle customer queries and complaints via phone and email.\",\n                \"category\": \"Customer Support\",\n                \"jobType\": \"full_time\",\n                \"company\": {\n                    \"name\": \"SwiftDeliver Pvt Ltd\",\n                    \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                    \"industry\": \"Logistics\"\n                },\n                \"location\": {\n                    \"address\": \"MG Road\",\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"postalCode\": \"560001\",\n                    \"latitude\": 12.9756,\n                    \"longitude\": 77.605\n                },\n                \"requirements\": {\n                    \"experienceInYears\": 1,\n                    \"gender\": \"any\",\n                    \"education\": [\n                        \"XII\"\n                    ],\n                    \"certifications\": [],\n                    \"skills\": [\n                        \"Communication\",\n                        \"Problem Solving\"\n                    ],\n                    \"languages\": [\n                        \"English\",\n                        \"Hindi\",\n                        \"Kannada\"\n                    ],\n                    \"assetsRequired\": [\n                        \"Smartphone\"\n                    ]\n                },\n                \"responsibilities\": [\n                    \"Answer customer calls\",\n                    \"Resolve complaints\",\n                    \"Update CRM\"\n                ],\n                \"salary\": {\n                    \"amount\": 17000,\n                    \"currency\": \"INR\",\n                    \"frequency\": \"monthly\"\n                },\n                \"schedule\": {\n                    \"shiftType\": \"day\",\n                    \"hoursPerWeek\": 40,\n                    \"daysOfWeek\": [\n                        \"monday\",\n                        \"tuesday\",\n                        \"wednesday\",\n                        \"thursday\",\n                        \"friday\",\n                        \"saturday\"\n                    ],\n                    \"startTime\": \"09:00\",\n                    \"endTime\": \"17:00\",\n                    \"overtimeAvailable\": false,\n                    \"weekendWork\": true\n                },\n                \"benefits\": [\n                    \"health_insurance\",\n                    \"paid_time_off\",\n                    \"training_provided\"\n                ],\n                \"postedDate\": \"2025-06-06T09:00:00Z\",\n                \"validUntil\": \"2025-06-20T23:59:59Z\",\n                \"metadata\": {\n                    \"tags\": [\n                        \"customer_service\",\n                        \"support\",\n                        \"bangalore\"\n                    ]\n                },\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"68405f8a368701dcb24c8f85\",\n                \"jobId\": \"JOB-1007-TEC\",\n                \"title\": \"Technician (Vehicle Maintenance)\",\n                \"description\": \"Perform routine maintenance and repairs on company vehicles.\",\n                \"category\": \"Maintenance\",\n                \"jobType\": \"full_time\",\n                \"company\": {\n                    \"name\": \"SwiftDeliver Pvt Ltd\",\n                    \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                    \"industry\": \"Logistics\"\n                },\n                \"location\": {\n                    \"address\": \"BTM Layout\",\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"postalCode\": \"560076\",\n                    \"latitude\": 12.9166,\n                    \"longitude\": 77.6101\n                },\n                \"requirements\": {\n                    \"experienceInYears\": 2,\n                    \"gender\": \"male\",\n                    \"education\": [\n                        \"ITI\"\n                    ],\n                    \"certifications\": [\n                        \"Automobile Technician\"\n                    ],\n                    \"skills\": [\n                        \"Vehicle Maintenance\",\n                        \"Repair\"\n                    ],\n                    \"languages\": [\n                        \"Hindi\",\n                        \"Kannada\"\n                    ],\n                    \"assetsRequired\": [\n                        \"Tool Kit\"\n                    ]\n                },\n                \"responsibilities\": [\n                    \"Inspect vehicles\",\n                    \"Perform repairs\",\n                    \"Maintain records\"\n                ],\n                \"salary\": {\n                    \"amount\": 19000,\n                    \"currency\": \"INR\",\n                    \"frequency\": \"monthly\"\n                },\n                \"schedule\": {\n                    \"shiftType\": \"day\",\n                    \"hoursPerWeek\": 48,\n                    \"daysOfWeek\": [\n                        \"monday\",\n                        \"tuesday\",\n                        \"wednesday\",\n                        \"thursday\",\n                        \"friday\",\n                        \"saturday\"\n                    ],\n                    \"startTime\": \"08:00\",\n                    \"endTime\": \"16:00\",\n                    \"overtimeAvailable\": true,\n                    \"weekendWork\": true\n                },\n                \"benefits\": [\n                    \"health_insurance\",\n                    \"tools_provided\",\n                    \"training_provided\"\n                ],\n                \"postedDate\": \"2025-06-07T08:00:00Z\",\n                \"validUntil\": \"2025-06-21T23:59:59Z\",\n                \"metadata\": {\n                    \"tags\": [\n                        \"technician\",\n                        \"maintenance\",\n                        \"vehicle\",\n                        \"bangalore\"\n                    ]\n                },\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"68405f8a368701dcb24c8f86\",\n                \"jobId\": \"JOB-1008-LOA\",\n                \"title\": \"Loader/Unloader\",\n                \"description\": \"Assist in loading and unloading goods at the warehouse and delivery points.\",\n                \"category\": \"Warehouse\",\n                \"jobType\": \"full_time\",\n                \"company\": {\n                    \"name\": \"SwiftDeliver Pvt Ltd\",\n                    \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                    \"industry\": \"Logistics\"\n                },\n                \"location\": {\n                    \"address\": \"Yeshwanthpur\",\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"postalCode\": \"560022\",\n                    \"latitude\": 13.028,\n                    \"longitude\": 77.55\n                },\n                \"requirements\": {\n                    \"experienceInYears\": 0,\n                    \"gender\": \"male\",\n                    \"education\": [\n                        \"None\"\n                    ],\n                    \"certifications\": [],\n                    \"skills\": [\n                        \"Lifting\",\n                        \"Teamwork\"\n                    ],\n                    \"languages\": [\n                        \"Kannada\"\n                    ],\n                    \"assetsRequired\": [\n                        \"None\"\n                    ]\n                },\n                \"responsibilities\": [\n                    \"Load/unload goods\",\n                    \"Assist drivers\",\n                    \"Maintain safety\"\n                ],\n                \"salary\": {\n                    \"amount\": 12000,\n                    \"currency\": \"INR\",\n                    \"frequency\": \"monthly\"\n                },\n                \"schedule\": {\n                    \"shiftType\": \"day\",\n                    \"hoursPerWeek\": 48,\n                    \"daysOfWeek\": [\n                        \"monday\",\n                        \"tuesday\",\n                        \"wednesday\",\n                        \"thursday\",\n                        \"friday\",\n                        \"saturday\"\n                    ],\n                    \"startTime\": \"07:00\",\n                    \"endTime\": \"16:00\",\n                    \"overtimeAvailable\": true,\n                    \"weekendWork\": true\n                },\n                \"benefits\": [\n                    \"health_insurance\",\n                    \"uniform_provided\"\n                ],\n                \"postedDate\": \"2025-06-08T07:00:00Z\",\n                \"validUntil\": \"2025-06-22T23:59:59Z\",\n                \"metadata\": {\n                    \"tags\": [\n                        \"loader\",\n                        \"warehouse\",\n                        \"bangalore\"\n                    ]\n                },\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"68405f8a368701dcb24c8f87\",\n                \"jobId\": \"JOB-1009-IT\",\n                \"title\": \"IT Support Executive\",\n                \"description\": \"Provide IT support for office and warehouse systems.\",\n                \"category\": \"IT\",\n                \"jobType\": \"full_time\",\n                \"company\": {\n                    \"name\": \"SwiftDeliver Pvt Ltd\",\n                    \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                    \"industry\": \"Logistics\"\n                },\n                \"location\": {\n                    \"address\": \"Electronic City\",\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"postalCode\": \"560100\",\n                    \"latitude\": 12.8452,\n                    \"longitude\": 77.66\n                },\n                \"requirements\": {\n                    \"experienceInYears\": 1,\n                    \"gender\": \"any\",\n                    \"education\": [\n                        \"BCA\",\n                        \"BSc IT\"\n                    ],\n                    \"certifications\": [],\n                    \"skills\": [\n                        \"IT Support\",\n                        \"Networking\"\n                    ],\n                    \"languages\": [\n                        \"English\",\n                        \"Hindi\"\n                    ],\n                    \"assetsRequired\": [\n                        \"Laptop\"\n                    ]\n                },\n                \"responsibilities\": [\n                    \"Troubleshoot systems\",\n                    \"Network maintenance\",\n                    \"User support\"\n                ],\n                \"salary\": {\n                    \"amount\": 22000,\n                    \"currency\": \"INR\",\n                    \"frequency\": \"monthly\"\n                },\n                \"schedule\": {\n                    \"shiftType\": \"day\",\n                    \"hoursPerWeek\": 40,\n                    \"daysOfWeek\": [\n                        \"monday\",\n                        \"tuesday\",\n                        \"wednesday\",\n                        \"thursday\",\n                        \"friday\"\n                    ],\n                    \"startTime\": \"10:00\",\n                    \"endTime\": \"18:00\",\n                    \"overtimeAvailable\": false,\n                    \"weekendWork\": false\n                },\n                \"benefits\": [\n                    \"health_insurance\",\n                    \"paid_time_off\",\n                    \"training_provided\"\n                ],\n                \"postedDate\": \"2025-06-09T10:00:00Z\",\n                \"validUntil\": \"2025-06-23T23:59:59Z\",\n                \"metadata\": {\n                    \"tags\": [\n                        \"it_support\",\n                        \"office\",\n                        \"bangalore\"\n                    ]\n                },\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"68405f8a368701dcb24c8f88\",\n                \"jobId\": \"JOB-1010-ACC\",\n                \"title\": \"Accounts Assistant\",\n                \"description\": \"Assist in daily accounting tasks and maintain financial records.\",\n                \"category\": \"Accounts\",\n                \"jobType\": \"full_time\",\n                \"company\": {\n                    \"name\": \"SwiftDeliver Pvt Ltd\",\n                    \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                    \"industry\": \"Logistics\"\n                },\n                \"location\": {\n                    \"address\": \"Jayanagar\",\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"postalCode\": \"560041\",\n                    \"latitude\": 12.925,\n                    \"longitude\": 77.5938\n                },\n                \"requirements\": {\n                    \"experienceInYears\": 1,\n                    \"gender\": \"any\",\n                    \"education\": [\n                        \"BCom\"\n                    ],\n                    \"certifications\": [],\n                    \"skills\": [\n                        \"Accounting\",\n                        \"Tally\"\n                    ],\n                    \"languages\": [\n                        \"English\",\n                        \"Kannada\"\n                    ],\n                    \"assetsRequired\": [\n                        \"Laptop\"\n                    ]\n                },\n                \"responsibilities\": [\n                    \"Maintain accounts\",\n                    \"Assist with payroll\",\n                    \"Prepare reports\"\n                ],\n                \"salary\": {\n                    \"amount\": 16000,\n                    \"currency\": \"INR\",\n                    \"frequency\": \"monthly\"\n                },\n                \"schedule\": {\n                    \"shiftType\": \"day\",\n                    \"hoursPerWeek\": 40,\n                    \"daysOfWeek\": [\n                        \"monday\",\n                        \"tuesday\",\n                        \"wednesday\",\n                        \"thursday\",\n                        \"friday\"\n                    ],\n                    \"startTime\": \"09:30\",\n                    \"endTime\": \"17:30\",\n                    \"overtimeAvailable\": false,\n                    \"weekendWork\": false\n                },\n                \"benefits\": [\n                    \"health_insurance\",\n                    \"paid_time_off\"\n                ],\n                \"postedDate\": \"2025-06-10T09:30:00Z\",\n                \"validUntil\": \"2025-06-24T23:59:59Z\",\n                \"metadata\": {\n                    \"tags\": [\n                        \"accounts\",\n                        \"assistant\",\n                        \"bangalore\"\n                    ]\n                },\n                \"__v\": 0\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "view job",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"request\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/jobs/{{jobId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"jobs",
+						"{{jobId}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "view job",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/jobs/{{jobId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"jobs",
+								"{{jobId}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1503"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5df-FVA1347cr9otg0b90VejWcoaCHg\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 15:00:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"api.jobs.view\",\n    \"ver\": \"1.0\",\n    \"ets\": 1749049244036,\n    \"params\": {\n        \"msgid\": \"4fe11666-fe0d-4413-8614-ad0b78f1325e\",\n        \"err\": \"\",\n        \"status\": \"SUCCESSFUL\",\n        \"errmsg\": \"\"\n    },\n    \"responseCode\": \"OK\",\n    \"result\": {\n        \"job\": {\n            \"_id\": \"68405f8a368701dcb24c8f82\",\n            \"jobId\": \"JOB-1004-SEC\",\n            \"title\": \"Security Guard\",\n            \"description\": \"Responsible for maintaining security and safety at the warehouse premises.\",\n            \"category\": \"Security\",\n            \"jobType\": \"full_time\",\n            \"company\": {\n                \"name\": \"SwiftDeliver Pvt Ltd\",\n                \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                \"industry\": \"Logistics\"\n            },\n            \"location\": {\n                \"address\": \"Peenya Industrial Area\",\n                \"city\": \"Bengaluru\",\n                \"state\": \"Karnataka\",\n                \"country\": \"India\",\n                \"postalCode\": \"560058\",\n                \"latitude\": 13.0285,\n                \"longitude\": 77.5151\n            },\n            \"requirements\": {\n                \"experienceInYears\": 2,\n                \"gender\": \"male\",\n                \"education\": [\n                    \"X\"\n                ],\n                \"certifications\": [],\n                \"skills\": [\n                    \"Vigilance\",\n                    \"Reporting\"\n                ],\n                \"languages\": [\n                    \"Kannada\",\n                    \"Hindi\"\n                ],\n                \"assetsRequired\": [\n                    \"None\"\n                ]\n            },\n            \"responsibilities\": [\n                \"Monitor premises\",\n                \"Check visitor entry\",\n                \"Report incidents\"\n            ],\n            \"salary\": {\n                \"amount\": 14000,\n                \"currency\": \"INR\",\n                \"frequency\": \"monthly\"\n            },\n            \"schedule\": {\n                \"shiftType\": \"night\",\n                \"hoursPerWeek\": 48,\n                \"daysOfWeek\": [\n                    \"monday\",\n                    \"tuesday\",\n                    \"wednesday\",\n                    \"thursday\",\n                    \"friday\",\n                    \"saturday\"\n                ],\n                \"startTime\": \"20:00\",\n                \"endTime\": \"05:00\",\n                \"overtimeAvailable\": false,\n                \"weekendWork\": true\n            },\n            \"benefits\": [\n                \"health_insurance\",\n                \"uniform_provided\"\n            ],\n            \"postedDate\": \"2025-06-04T20:00:00Z\",\n            \"validUntil\": \"2025-06-18T23:59:59Z\",\n            \"metadata\": {\n                \"tags\": [\n                    \"security\",\n                    \"night_shift\",\n                    \"warehouse\",\n                    \"bangalore\"\n                ]\n            },\n            \"__v\": 0\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "apply job",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"application_id\": \"APP-784532\",\n  \"job_id\": \"JOB-2391-DEL\",\n  \"submitted_on\": \"2025-06-02T14:32:00Z\",\n  \"applicant\": {\n    \"full_name\": \"Arun Kumar\",\n    \"phone_number\": \"+91-9876543211\",\n    \"email\": \"arunkumar89@example.com\",\n    \"date_of_birth\": \"1998-04-15\",\n    \"gender\": \"Male\",\n    \"languages_spoken\": [\"Hindi\", \"Kannada\", \"English\"],\n    \"address\": {\n      \"street\": \"3rd Cross, BTM Layout\",\n      \"city\": \"Bengaluru\",\n      \"state\": \"Karnataka\",\n      \"postal_code\": \"560076\"\n    },\n    \"identification\": {\n      \"aadhaar_number\": \"XXXX-XXXX-1234\",\n      \"driving_license\": \"KA1234567890123\"\n    }\n  },\n  \"documents_uploaded\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/jobs/{{jobId}}/apply",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"jobs",
+						"{{jobId}}",
+						"apply"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "apply job",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"application_id\": \"APP-784532\",\n  \"job_id\": \"JOB-2391-DEL\",\n  \"submitted_on\": \"2025-06-02T14:32:00Z\",\n  \"applicant\": {\n    \"full_name\": \"Arun Kumar\",\n    \"phone_number\": \"+91-9876543211\",\n    \"email\": \"arunkumar89@example.com\",\n    \"date_of_birth\": \"1998-04-15\",\n    \"gender\": \"Male\",\n    \"languages_spoken\": [\"Hindi\", \"Kannada\", \"English\"],\n    \"address\": {\n      \"street\": \"3rd Cross, BTM Layout\",\n      \"city\": \"Bengaluru\",\n      \"state\": \"Karnataka\",\n      \"postal_code\": \"560076\"\n    },\n    \"identification\": {\n      \"aadhaar_number\": \"XXXX-XXXX-1234\",\n      \"driving_license\": \"KA1234567890123\"\n    }\n  },\n  \"documents_uploaded\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/jobs/{{jobId}}/apply",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"jobs",
+								"{{jobId}}",
+								"apply"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "323"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"143-G2Ezidzq08BSfgiIBUBjjpRcP3U\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 15:01:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"api.jobs.apply\",\n    \"ver\": \"1.0\",\n    \"ets\": 1749049282149,\n    \"params\": {\n        \"msgid\": \"b72e19c8-0079-4d62-9602-a3e44ab7a7f1\",\n        \"err\": \"\",\n        \"status\": \"SUCCESSFUL\",\n        \"errmsg\": \"\"\n    },\n    \"responseCode\": \"OK\",\n    \"result\": {\n        \"application\": {\n            \"application_id\": \"APP-856828-0F4B\",\n            \"job_id\": \"JOB-1004-SEC\",\n            \"status\": \"submitted\",\n            \"applied_at\": \"2025-06-04T15:01:22.142Z\"\n        }\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "jobId",
+			"value": "JOB-2391-DEL",
+			"type": "string"
+		}
+	]
+}

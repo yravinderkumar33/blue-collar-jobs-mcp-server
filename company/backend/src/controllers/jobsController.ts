@@ -133,4 +133,32 @@ export const applyToJob = async (req: Request, res: Response, next: any) => {
   } catch (err) {
     next(err);
   }
+};
+
+// 4. Get All Job Applications
+export const getAllApplications = async (req: Request, res: Response) => {
+  try {
+    const applications = await Application.find().lean();
+    res.json(buildResponsePayload({
+      id: 'api.applications.list',
+      result: { applications },
+      responseCode: 'OK',
+      params: {
+        status: 'SUCCESSFUL',
+        err: '',
+        errmsg: ''
+      }
+    }));
+  } catch (err) {
+    res.status(500).json(buildResponsePayload({
+      id: 'api.applications.list',
+      result: { applications: [] },
+      responseCode: 'INTERNAL_ERROR',
+      params: {
+        status: 'FAILED',
+        err: 'INTERNAL_ERROR',
+        errmsg: (err as Error).message
+      }
+    }));
+  }
 }; 

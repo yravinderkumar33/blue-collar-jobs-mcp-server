@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "jobs-platform": {
+      "command": "node",
+      "args": ["/absolute/path/to/your/mcp-server/dist/jobs-mcp.js"],
+      "env": {}
+    }
+  }
+} 
