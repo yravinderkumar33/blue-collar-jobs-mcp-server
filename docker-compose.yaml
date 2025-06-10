@@ -14,15 +14,27 @@ services:
       ME_CONFIG_MONGODB_URL: mongodb://mongo:27017/
       ME_CONFIG_BASICAUTH: "false"
 
-  seed:
+  seed_company_a:
     build: ./company/backend/backend-company-a
     depends_on:
       - mongo
     environment:
       - PORT=3000
       - MONGO_URI=mongodb://mongo:27017/jobs_company_a
-    command: ["npm", "run", "seed"]
-    
+    command: >
+      sh -c "sleep 10 && \
+            npm run seed"
+            
+  seed_company_b:
+    build: ./company/backend/backend-company-b
+    depends_on:
+      - mongo
+    environment:
+      - PORT=4000
+      - MONGO_URI=mongodb://mongo:27017/jobs_company_b
+    command: >
+      sh -c "sleep 10 && \
+            npm run seed"
   backend_company_a:
     build: ./company/backend/backend-company-a
     ports:
@@ -30,8 +42,20 @@ services:
     depends_on:
       - mongo
       - mongo-express
-      - seed
+      - seed_company_a
     environment:
       - PORT=3000
       - MONGO_URI=mongodb://mongo:27017/jobs_company_a
+  
+  backend_company_b:
+    build: ./company/backend/backend-company-b
+    ports:
+      - 4000:4000
+    depends_on:
+      - mongo
+      - mongo-express
+      - seed_company_b
+    environment:
+      - PORT=4000
+      - MONGO_URI=mongodb://mongo:27017/jobs_company_b
 
