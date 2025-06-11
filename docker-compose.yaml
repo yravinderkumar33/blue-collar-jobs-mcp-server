@@ -18,7 +18,7 @@ services:
 
   seed_company_a:
     build: ./company/backend/backend-company-a
-    container_name: backend-company-a
+    container_name: seed-backend-company-a
     depends_on:
       - mongo
     environment:
@@ -30,7 +30,7 @@ services:
             
   seed_company_b:
     build: ./company/backend/backend-company-b
-    container_name: backend-company-b
+    container_name: seed-backend-company-b
     depends_on:
       - mongo
     environment:
@@ -64,4 +64,14 @@ services:
     environment:
       - PORT=4000
       - MONGO_URI=mongodb://mongo:27017/jobs_company_b
+
+  frontend_company_a:
+    build: ./company/frontend/company-a/blue-collar-careers-main
+    container_name: frontend-company-a
+    ports:
+      - 8080:8080
+    environment:
+      - VITE_API_URL=http://localhost:3000/api
+    depends_on:
+      - backend_company_a
 
