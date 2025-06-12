@@ -1,37 +1,87 @@
 services:
   mongo:
     image: mongo
+    container_name: mongo
     restart: always
     ports:
       - 27017:27017
 
   mongo-express:
     image: mongo-express
+    container_name: mongo-express
     restart: always
     ports:
       - 8081:8081
     environment:
       ME_CONFIG_MONGODB_URL: mongodb://mongo:27017/
-      ME_CONFIG_BASICAUTH: false
+      ME_CONFIG_BASICAUTH: "false"
 
-  seed:
-    build: ./company/backend
+  seed_company_a:
+    build: ./company/backend/backend-company-a
+    container_name: seed-backend-company-a
     depends_on:
       - mongo
     environment:
       - PORT=3000
-      - MONGO_URI=mongodb://mongo:27017/jobs
-    command: ["npm", "run", "seed"]
-    
-  backend:
-    build: ./company/backend
+      - MONGO_URI=mongodb://mongo:27017/jobs_company_a
+    command: >
+      sh -c "sleep 10 && \
+            npm run seed"
+            
+  seed_company_b:
+    build: ./company/backend/backend-company-b
+    container_name: seed-backend-company-b
+    depends_on:
+      - mongo
+    environment:
+      - PORT=4000
+      - MONGO_URI=mongodb://mongo:27017/jobs_company_b
+    command: >
+      sh -c "sleep 10 && \
+            npm run seed"
+  backend_company_a:
+    build: ./company/backend/backend-company-a
+    container_name: backend-company-a
     ports:
       - 3000:3000
     depends_on:
       - mongo
       - mongo-express
-      - seed
+      - seed_company_a
     environment:
       - PORT=3000
-      - MONGO_URI=mongodb://mongo:27017/jobs
+      - MONGO_URI=mongodb://mongo:27017/jobs_company_a
+  
+  backend_company_b:
+    build: ./company/backend/backend-company-b
+    container_name: backend-company-b
+    ports:
+      - 4000:4000
+    depends_on:
+      - mongo
+      - mongo-express
+      - seed_company_b
+    environment:
+      - PORT=4000
+      - MONGO_URI=mongodb://mongo:27017/jobs_company_b
+
+  frontend_company_a:
+    build: ./company/frontend/company-a/blue-collar-careers-main
+    container_name: frontend-company-a
+    ports:
+      - 8080:8080
+    environment:
+      - VITE_API_URL=http://localhost:3000/api
+    depends_on:
+      - backend_company_a
+
+  frontend_company_b:
+    build: ./company/frontend/company-b/dark-hued-careers-portal
+    container_name: frontend-company-b
+    ports:
+      - 8082:8080
+    environment:
+      - VITE_API_URL=http://localhost:4000/api
+    depends_on:
+      - backend_company_b
 
