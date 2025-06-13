@@ -1,0 +1,346 @@
+{
+	"info": {
+		"_postman_id": "5bed7e46-684b-44f5-926a-64a159e96010",
+		"name": "jobs-mcp-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5394404"
+	},
+	"item": [
+		{
+			"name": "seach jobs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"request\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/jobs/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"jobs",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "seach jobs",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/jobs/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"jobs",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "10692"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"29c4-VNX3+7iFmVFXAsmDUZFrjflT+YQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jun 2025 11:51:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"api.jobs.search\",\n    \"ver\": \"1.0\",\n    \"ets\": 1749729117190,\n    \"params\": {\n        \"msgid\": \"54dc50e8-dfc9-4de6-8ef8-f42617d0122e\",\n        \"err\": \"\",\n        \"status\": \"SUCCESSFUL\",\n        \"errmsg\": \"\"\n    },\n    \"responseCode\": \"OK\",\n    \"result\": {\n        \"jobs\": [\n            {\n                \"_id\": \"684aba755d11ab259969653c\",\n                \"jobId\": \"JOB-1001-DEL\",\n                \"job\": {\n                    \"title\": \"Delivery Executive (Two-Wheeler Required)\",\n                    \"description\": \"We are hiring delivery executives to deliver parcels across Bengaluru city. Applicants must own a two-wheeler and a valid driving license.\",\n                    \"requirements\": {\n                        \"education\": [\n                            \"XII\"\n                        ],\n                        \"experience\": \"2 years\",\n                        \"skills\": [\n                            \"Driving\",\n                            \"Navigation\",\n                            \"Customer Interaction\"\n                        ],\n                        \"gender\": \"male\",\n                        \"languages\": [\n                            \"Hindi\",\n                            \"Kannada\",\n                            \"Basic English\"\n                        ],\n                        \"assetsRequired\": [\n                            \"Two-wheeler\",\n                            \"Smartphone\",\n                            \"Valid DL\"\n                        ],\n                        \"physicalRequirements\": [],\n                        \"documentsRequired\": [],\n                        \"otherRequirements\": []\n                    },\n                    \"responsibilities\": [\n                        \"Pick up and deliver packages as per route plan\",\n                        \"Collect COD payments from customers\",\n                        \"Maintain delivery logs via mobile app\"\n                    ],\n                    \"benefits\": [\n                        \"health_insurance\",\n                        \"dental_insurance\",\n                        \"paid_time_off\",\n                        \"workers_compensation\",\n                        \"tools_provided\",\n                        \"uniform_provided\",\n                        \"training_provided\",\n                        \"career_advancement\"\n                    ],\n                    \"employment_type\": \"full_time\",\n                    \"posted_at\": \"2025-06-01T10:00:00Z\",\n                    \"expires_at\": \"2025-06-15T23:59:59Z\",\n                    \"status\": null\n                },\n                \"company\": {\n                    \"name\": \"SwiftDeliver Pvt Ltd\",\n                    \"website\": null\n                },\n                \"compensation\": {\n                    \"currency\": \"INR\",\n                    \"min_amount\": 18000,\n                    \"max_amount\": 18000,\n                    \"incentive\": false,\n                    \"bonus\": false\n                },\n                \"location\": {\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"postal_code\": \"560038\",\n                    \"complete_address\": \"7th Main, Indiranagar\"\n                },\n                \"metadata\": {\n                    \"source_id\": \"company-a\",\n                    \"ingested_at\": \"2025-06-12T11:31:01.422Z\",\n                    \"original_event\": {\n                        \"_id\": \"684aba660c4a403de9db2a15\",\n                        \"jobId\": \"JOB-1001-DEL\",\n                        \"title\": \"Delivery Executive (Two-Wheeler Required)\",\n                        \"description\": \"We are hiring delivery executives to deliver parcels across Bengaluru city. Applicants must own a two-wheeler and a valid driving license.\",\n                        \"category\": \"Logistics\",\n                        \"jobType\": \"full_time\",\n                        \"company\": {\n                            \"name\": \"SwiftDeliver Pvt Ltd\",\n                            \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                            \"industry\": \"Logistics\"\n                        },\n                        \"location\": {\n                            \"address\": \"7th Main, Indiranagar\",\n                            \"city\": \"Bengaluru\",\n                            \"state\": \"Karnataka\",\n                            \"country\": \"India\",\n                            \"postalCode\": \"560038\",\n                            \"latitude\": 12.9716,\n                            \"longitude\": 77.5946\n                        },\n                        \"requirements\": {\n                            \"experienceInYears\": 2,\n                            \"gender\": \"male\",\n                            \"education\": [\n                                \"XII\"\n                            ],\n                            \"certifications\": [],\n                            \"skills\": [\n                                \"Driving\",\n                                \"Navigation\",\n                                \"Customer Interaction\"\n                            ],\n                            \"languages\": [\n                                \"Hindi\",\n                                \"Kannada\",\n                                \"Basic English\"\n                            ],\n                            \"assetsRequired\": [\n                                \"Two-wheeler\",\n                                \"Smartphone\",\n                                \"Valid DL\"\n                            ]\n                        },\n                        \"responsibilities\": [\n                            \"Pick up and deliver packages as per route plan\",\n                            \"Collect COD payments from customers\",\n                            \"Maintain delivery logs via mobile app\"\n                        ],\n                        \"salary\": {\n                            \"amount\": 18000,\n                            \"currency\": \"INR\",\n                            \"frequency\": \"monthly\"\n                        },\n                        \"schedule\": {\n                            \"shiftType\": \"day\",\n                            \"hoursPerWeek\": 40,\n                            \"daysOfWeek\": [\n                                \"monday\",\n                                \"tuesday\",\n                                \"wednesday\",\n                                \"thursday\",\n                                \"friday\"\n                            ],\n                            \"startTime\": \"07:00\",\n                            \"endTime\": \"15:30\",\n                            \"overtimeAvailable\": true,\n                            \"weekendWork\": false\n                        },\n                        \"benefits\": [\n                            \"health_insurance\",\n                            \"dental_insurance\",\n                            \"paid_time_off\",\n                            \"workers_compensation\",\n                            \"tools_provided\",\n                            \"uniform_provided\",\n                            \"training_provided\",\n                            \"career_advancement\"\n                        ],\n                        \"postedDate\": \"2025-06-01T10:00:00Z\",\n                        \"validUntil\": \"2025-06-15T23:59:59Z\",\n                        \"metadata\": {\n                            \"tags\": [\n                                \"delivery\",\n                                \"bike\",\n                                \"fresher_friendly\",\n                                \"bangalore\"\n                            ]\n                        },\n                        \"__v\": 0\n                    }\n                },\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"684aba865d11ab259969653e\",\n                \"jobId\": \"JOB-1002-WHS\",\n                \"job\": {\n                    \"title\": \"Warehouse Associate\",\n                    \"description\": \"Join our warehouse team to manage inventory, packing, and dispatch. Prior experience in warehouse operations preferred.\",\n                    \"requirements\": {\n                        \"age\": null,\n                        \"education\": [\n                            \"X\"\n                        ],\n                        \"experience\": \"1 year\",\n                        \"skills\": [\n                            \"Inventory Management\",\n                            \"Packing\",\n                            \"Teamwork\"\n                        ],\n                        \"gender\": \"any\",\n                        \"languages\": [\n                            \"Hindi\",\n                            \"Kannada\"\n                        ],\n                        \"assetsRequired\": [\n                            \"None\"\n                        ],\n                        \"physicalRequirements\": [],\n                        \"documentsRequired\": [],\n                        \"otherRequirements\": []\n                    },\n                    \"responsibilities\": [\n                        \"Manage inventory\",\n                        \"Pack and dispatch orders\",\n                        \"Maintain cleanliness\"\n                    ],\n                    \"benefits\": [\n                        \"health_insurance\",\n                        \"paid_time_off\",\n                        \"uniform_provided\"\n                    ],\n                    \"employment_type\": \"full_time\",\n                    \"posted_at\": \"2025-06-02T09:00:00Z\",\n                    \"expires_at\": \"2025-06-16T23:59:59Z\",\n                    \"status\": null\n                },\n                \"company\": {\n                    \"name\": \"SwiftDeliver Pvt Ltd\",\n                    \"website\": null\n                },\n                \"compensation\": {\n                    \"currency\": \"INR\",\n                    \"min_amount\": 15000,\n                    \"max_amount\": 15000,\n                    \"incentive\": false,\n                    \"bonus\": false\n                },\n                \"location\": {\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"postal_code\": \"560066\",\n                    \"complete_address\": \"Whitefield Industrial Area\"\n                },\n                \"metadata\": {\n                    \"source_id\": \"company-a\",\n                    \"ingested_at\": \"2025-06-12T11:31:18.152Z\",\n                    \"original_event\": {\n                        \"_id\": \"684aba660c4a403de9db2a16\",\n                        \"jobId\": \"JOB-1002-WHS\",\n                        \"title\": \"Warehouse Associate\",\n                        \"description\": \"Join our warehouse team to manage inventory, packing, and dispatch. Prior experience in warehouse operations preferred.\",\n                        \"category\": \"Warehouse\",\n                        \"jobType\": \"full_time\",\n                        \"company\": {\n                            \"name\": \"SwiftDeliver Pvt Ltd\",\n                            \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                            \"industry\": \"Logistics\"\n                        },\n                        \"location\": {\n                            \"address\": \"Whitefield Industrial Area\",\n                            \"city\": \"Bengaluru\",\n                            \"state\": \"Karnataka\",\n                            \"country\": \"India\",\n                            \"postalCode\": \"560066\",\n                            \"latitude\": 12.9698,\n                            \"longitude\": 77.7499\n                        },\n                        \"requirements\": {\n                            \"experienceInYears\": 1,\n                            \"gender\": \"any\",\n                            \"education\": [\n                                \"X\"\n                            ],\n                            \"certifications\": [],\n                            \"skills\": [\n                                \"Inventory Management\",\n                                \"Packing\",\n                                \"Teamwork\"\n                            ],\n                            \"languages\": [\n                                \"Hindi\",\n                                \"Kannada\"\n                            ],\n                            \"assetsRequired\": [\n                                \"None\"\n                            ]\n                        },\n                        \"responsibilities\": [\n                            \"Manage inventory\",\n                            \"Pack and dispatch orders\",\n                            \"Maintain cleanliness\"\n                        ],\n                        \"salary\": {\n                            \"amount\": 15000,\n                            \"currency\": \"INR\",\n                            \"frequency\": \"monthly\"\n                        },\n                        \"schedule\": {\n                            \"shiftType\": \"day\",\n                            \"hoursPerWeek\": 48,\n                            \"daysOfWeek\": [\n                                \"monday\",\n                                \"tuesday\",\n                                \"wednesday\",\n                                \"thursday\",\n                                \"friday\",\n                                \"saturday\"\n                            ],\n                            \"startTime\": \"09:00\",\n                            \"endTime\": \"18:00\",\n                            \"overtimeAvailable\": false,\n                            \"weekendWork\": true\n                        },\n                        \"benefits\": [\n                            \"health_insurance\",\n                            \"paid_time_off\",\n                            \"uniform_provided\"\n                        ],\n                        \"postedDate\": \"2025-06-02T09:00:00Z\",\n                        \"validUntil\": \"2025-06-16T23:59:59Z\",\n                        \"metadata\": {\n                            \"tags\": [\n                                \"warehouse\",\n                                \"packing\",\n                                \"inventory\",\n                                \"bangalore\"\n                            ]\n                        },\n                        \"__v\": 0\n                    }\n                },\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"684aba935d11ab2599696540\",\n                \"jobId\": \"JOB-2001-DEL\",\n                \"job\": {\n                    \"title\": \"Delivery Executive\",\n                    \"description\": \"Deliver packages to customers across the city using a two-wheeler.\",\n                    \"requirements\": {\n                        \"education\": [\n                            \"X\"\n                        ],\n                        \"experience\": \"1 year\",\n                        \"skills\": [\n                            \"Driving\",\n                            \"Navigation\",\n                            \"Customer Service\"\n                        ],\n                        \"gender\": \"any\",\n                        \"languages\": [\n                            \"Hindi\",\n                            \"Basic English\"\n                        ],\n                        \"assetsRequired\": [\n                            \"Two-wheeler\",\n                            \"Smartphone\"\n                        ],\n                        \"documentsRequired\": [\n                            \"Valid DL\"\n                        ],\n                        \"otherRequirements\": []\n                    },\n                    \"responsibilities\": [\n                        \"Pick up and deliver packages\",\n                        \"Collect payments\",\n                        \"Update delivery status\"\n                    ],\n                    \"benefits\": [\n                        \"health_insurance\",\n                        \"uniform_provided\",\n                        \"training_provided\"\n                    ],\n                    \"employment_type\": \"full_time\",\n                    \"posted_at\": \"2025-06-01T09:00:00Z\",\n                    \"expires_at\": \"2025-06-15T23:59:59Z\",\n                    \"status\": \"active\"\n                },\n                \"company\": {\n                    \"name\": \"QuickMove Logistics\",\n                    \"website\": null\n                },\n                \"compensation\": {\n                    \"currency\": \"INR\",\n                    \"min_amount\": 17000,\n                    \"max_amount\": 17000,\n                    \"incentive\": false,\n                    \"bonus\": false\n                },\n                \"location\": {\n                    \"city\": \"Noida\",\n                    \"state\": \"Uttar Pradesh\",\n                    \"country\": \"India\",\n                    \"postal_code\": \"201301\",\n                    \"complete_address\": \"Sector 18, Noida, Uttar Pradesh, India, 201301\"\n                },\n                \"metadata\": {\n                    \"source_id\": \"company-b\",\n                    \"ingested_at\": \"2025-06-12T11:31:31.523Z\",\n                    \"original_event\": {\n                        \"_id\": \"684aba672ad2b57cd2794318\",\n                        \"jobId\": \"JOB-2001-DEL\",\n                        \"position\": {\n                            \"name\": \"Delivery Executive\",\n                            \"summary\": \"Deliver packages to customers across the city using a two-wheeler.\",\n                            \"department\": \"Logistics\",\n                            \"type\": \"full_time\"\n                        },\n                        \"organization\": {\n                            \"companyName\": \"QuickMove Logistics\",\n                            \"about\": \"QuickMove is a leading last-mile delivery company operating in major Indian cities.\",\n                            \"sector\": \"Logistics\"\n                        },\n                        \"workplace\": {\n                            \"street\": \"Sector 18\",\n                            \"city\": \"Noida\",\n                            \"region\": \"Uttar Pradesh\",\n                            \"nation\": \"India\",\n                            \"zipCode\": \"201301\",\n                            \"geo\": {\n                                \"lat\": 28.5672,\n                                \"lng\": 77.321\n                            }\n                        },\n                        \"qualifications\": {\n                            \"minExperienceYears\": 1,\n                            \"preferredGender\": \"any\",\n                            \"degrees\": [\n                                \"X\"\n                            ],\n                            \"requiredCertificates\": [\n                                \"Valid DL\"\n                            ],\n                            \"keySkills\": [\n                                \"Driving\",\n                                \"Navigation\",\n                                \"Customer Service\"\n                            ],\n                            \"spokenLanguages\": [\n                                \"Hindi\",\n                                \"Basic English\"\n                            ],\n                            \"mustHaveAssets\": [\n                                \"Two-wheeler\",\n                                \"Smartphone\"\n                            ]\n                        },\n                        \"tasks\": [\n                            \"Pick up and deliver packages\",\n                            \"Collect payments\",\n                            \"Update delivery status\"\n                        ],\n                        \"compensation\": {\n                            \"value\": 17000,\n                            \"currencyCode\": \"INR\",\n                            \"payPeriod\": \"monthly\"\n                        },\n                        \"workSchedule\": {\n                            \"shift\": \"day\",\n                            \"weeklyHours\": 48,\n                            \"workingDays\": [\n                                \"monday\",\n                                \"tuesday\",\n                                \"wednesday\",\n                                \"thursday\",\n                                \"friday\",\n                                \"saturday\"\n                            ],\n                            \"start\": \"08:00\",\n                            \"end\": \"16:00\",\n                            \"overtime\": true,\n                            \"includesWeekend\": false\n                        },\n                        \"perks\": [\n                            \"health_insurance\",\n                            \"uniform_provided\",\n                            \"training_provided\"\n                        ],\n                        \"dates\": {\n                            \"posted\": \"2025-06-01T09:00:00Z\",\n                            \"expiry\": \"2025-06-15T23:59:59Z\"\n                        },\n                        \"extra\": {\n                            \"keywords\": [\n                                \"delivery\",\n                                \"logistics\",\n                                \"noida\"\n                            ]\n                        },\n                        \"__v\": 0\n                    }\n                },\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"684abaa25d11ab2599696542\",\n                \"jobId\": \"JOB-2002-WHS\",\n                \"job\": {\n                    \"title\": \"Warehouse Packer\",\n                    \"description\": \"Pack and prepare goods for dispatch in the warehouse.\",\n                    \"requirements\": {\n                        \"age\": null,\n                        \"education\": [\n                            \"X\"\n                        ],\n                        \"experience\": \"0 years\",\n                        \"skills\": [\n                            \"Packing\",\n                            \"Teamwork\"\n                        ],\n                        \"gender\": \"any\",\n                        \"languages\": [\n                            \"Hindi\",\n                            \"Marathi\"\n                        ],\n                        \"assetsRequired\": [],\n                        \"physicalRequirements\": [],\n                        \"documentsRequired\": [],\n                        \"otherRequirements\": []\n                    },\n                    \"responsibilities\": [\n                        \"Pack goods for dispatch\",\n                        \"Label packages\",\n                        \"Maintain cleanliness\"\n                    ],\n                    \"benefits\": [\n                        \"uniform_provided\",\n                        \"paid_time_off\"\n                    ],\n                    \"employment_type\": \"full_time\",\n                    \"posted_at\": \"2025-06-02T10:00:00Z\",\n                    \"expires_at\": \"2025-06-16T23:59:59Z\",\n                    \"status\": null\n                },\n                \"company\": {\n                    \"name\": \"QuickMove Logistics\",\n                    \"website\": null\n                },\n                \"compensation\": {\n                    \"currency\": \"INR\",\n                    \"min_amount\": 14000,\n                    \"max_amount\": null,\n                    \"incentive\": false,\n                    \"bonus\": false\n                },\n                \"location\": {\n                    \"city\": \"Mumbai\",\n                    \"state\": \"Maharashtra\",\n                    \"country\": \"India\",\n                    \"postal_code\": \"400093\",\n                    \"complete_address\": \"MIDC Industrial Area, Mumbai, Maharashtra, India, 400093\"\n                },\n                \"metadata\": {\n                    \"source_id\": \"company-b\",\n                    \"ingested_at\": \"2025-06-12T11:31:46.333Z\",\n                    \"original_event\": {\n                        \"_id\": \"684aba672ad2b57cd2794319\",\n                        \"jobId\": \"JOB-2002-WHS\",\n                        \"position\": {\n                            \"name\": \"Warehouse Packer\",\n                            \"summary\": \"Pack and prepare goods for dispatch in the warehouse.\",\n                            \"department\": \"Warehouse\",\n                            \"type\": \"full_time\"\n                        },\n                        \"organization\": {\n                            \"companyName\": \"QuickMove Logistics\",\n                            \"about\": \"QuickMove is a leading last-mile delivery company operating in major Indian cities.\",\n                            \"sector\": \"Logistics\"\n                        },\n                        \"workplace\": {\n                            \"street\": \"MIDC Industrial Area\",\n                            \"city\": \"Mumbai\",\n                            \"region\": \"Maharashtra\",\n                            \"nation\": \"India\",\n                            \"zipCode\": \"400093\",\n                            \"geo\": {\n                                \"lat\": 19.1136,\n                                \"lng\": 72.8697\n                            }\n                        },\n                        \"qualifications\": {\n                            \"minExperienceYears\": 0,\n                            \"preferredGender\": \"any\",\n                            \"degrees\": [\n                                \"X\"\n                            ],\n                            \"requiredCertificates\": [],\n                            \"keySkills\": [\n                                \"Packing\",\n                                \"Teamwork\"\n                            ],\n                            \"spokenLanguages\": [\n                                \"Hindi\",\n                                \"Marathi\"\n                            ],\n                            \"mustHaveAssets\": []\n                        },\n                        \"tasks\": [\n                            \"Pack goods for dispatch\",\n                            \"Label packages\",\n                            \"Maintain cleanliness\"\n                        ],\n                        \"compensation\": {\n                            \"value\": 14000,\n                            \"currencyCode\": \"INR\",\n                            \"payPeriod\": \"monthly\"\n                        },\n                        \"workSchedule\": {\n                            \"shift\": \"day\",\n                            \"weeklyHours\": 48,\n                            \"workingDays\": [\n                                \"monday\",\n                                \"tuesday\",\n                                \"wednesday\",\n                                \"thursday\",\n                                \"friday\",\n                                \"saturday\"\n                            ],\n                            \"start\": \"09:00\",\n                            \"end\": \"18:00\",\n                            \"overtime\": false,\n                            \"includesWeekend\": true\n                        },\n                        \"perks\": [\n                            \"uniform_provided\",\n                            \"paid_time_off\"\n                        ],\n                        \"dates\": {\n                            \"posted\": \"2025-06-02T10:00:00Z\",\n                            \"expiry\": \"2025-06-16T23:59:59Z\"\n                        },\n                        \"extra\": {\n                            \"keywords\": [\n                                \"warehouse\",\n                                \"packing\",\n                                \"mumbai\"\n                            ]\n                        },\n                        \"__v\": 0\n                    }\n                },\n                \"__v\": 0\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "view job",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"request\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/jobs/{{jobId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"jobs",
+						"{{jobId}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "view job",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/jobs/{{jobId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"jobs",
+								"{{jobId}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3248"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cb0-PVki0BVY7w+5Pewt5whleICcBso\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jun 2025 11:52:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"api.jobs.view\",\n    \"ver\": \"1.0\",\n    \"ets\": 1749729138185,\n    \"params\": {\n        \"msgid\": \"e49e8ff1-0ee8-48dc-8464-a5780a61b9a0\",\n        \"err\": \"\",\n        \"status\": \"SUCCESSFUL\",\n        \"errmsg\": \"\"\n    },\n    \"responseCode\": \"OK\",\n    \"result\": {\n        \"job\": {\n            \"_id\": \"684aba755d11ab259969653c\",\n            \"jobId\": \"JOB-1001-DEL\",\n            \"job\": {\n                \"title\": \"Delivery Executive (Two-Wheeler Required)\",\n                \"description\": \"We are hiring delivery executives to deliver parcels across Bengaluru city. Applicants must own a two-wheeler and a valid driving license.\",\n                \"requirements\": {\n                    \"education\": [\n                        \"XII\"\n                    ],\n                    \"experience\": \"2 years\",\n                    \"skills\": [\n                        \"Driving\",\n                        \"Navigation\",\n                        \"Customer Interaction\"\n                    ],\n                    \"gender\": \"male\",\n                    \"languages\": [\n                        \"Hindi\",\n                        \"Kannada\",\n                        \"Basic English\"\n                    ],\n                    \"assetsRequired\": [\n                        \"Two-wheeler\",\n                        \"Smartphone\",\n                        \"Valid DL\"\n                    ],\n                    \"physicalRequirements\": [],\n                    \"documentsRequired\": [],\n                    \"otherRequirements\": []\n                },\n                \"responsibilities\": [\n                    \"Pick up and deliver packages as per route plan\",\n                    \"Collect COD payments from customers\",\n                    \"Maintain delivery logs via mobile app\"\n                ],\n                \"benefits\": [\n                    \"health_insurance\",\n                    \"dental_insurance\",\n                    \"paid_time_off\",\n                    \"workers_compensation\",\n                    \"tools_provided\",\n                    \"uniform_provided\",\n                    \"training_provided\",\n                    \"career_advancement\"\n                ],\n                \"employment_type\": \"full_time\",\n                \"posted_at\": \"2025-06-01T10:00:00Z\",\n                \"expires_at\": \"2025-06-15T23:59:59Z\",\n                \"status\": null\n            },\n            \"company\": {\n                \"name\": \"SwiftDeliver Pvt Ltd\",\n                \"website\": null\n            },\n            \"compensation\": {\n                \"currency\": \"INR\",\n                \"min_amount\": 18000,\n                \"max_amount\": 18000,\n                \"incentive\": false,\n                \"bonus\": false\n            },\n            \"location\": {\n                \"city\": \"Bengaluru\",\n                \"state\": \"Karnataka\",\n                \"country\": \"India\",\n                \"postal_code\": \"560038\",\n                \"complete_address\": \"7th Main, Indiranagar\"\n            },\n            \"metadata\": {\n                \"source_id\": \"company-a\",\n                \"ingested_at\": \"2025-06-12T11:31:01.422Z\",\n                \"original_event\": {\n                    \"_id\": \"684aba660c4a403de9db2a15\",\n                    \"jobId\": \"JOB-1001-DEL\",\n                    \"title\": \"Delivery Executive (Two-Wheeler Required)\",\n                    \"description\": \"We are hiring delivery executives to deliver parcels across Bengaluru city. Applicants must own a two-wheeler and a valid driving license.\",\n                    \"category\": \"Logistics\",\n                    \"jobType\": \"full_time\",\n                    \"company\": {\n                        \"name\": \"SwiftDeliver Pvt Ltd\",\n                        \"description\": \"SwiftDeliver is a fast-growing hyperlocal logistics startup providing 2-hour delivery across metros.\",\n                        \"industry\": \"Logistics\"\n                    },\n                    \"location\": {\n                        \"address\": \"7th Main, Indiranagar\",\n                        \"city\": \"Bengaluru\",\n                        \"state\": \"Karnataka\",\n                        \"country\": \"India\",\n                        \"postalCode\": \"560038\",\n                        \"latitude\": 12.9716,\n                        \"longitude\": 77.5946\n                    },\n                    \"requirements\": {\n                        \"experienceInYears\": 2,\n                        \"gender\": \"male\",\n                        \"education\": [\n                            \"XII\"\n                        ],\n                        \"certifications\": [],\n                        \"skills\": [\n                            \"Driving\",\n                            \"Navigation\",\n                            \"Customer Interaction\"\n                        ],\n                        \"languages\": [\n                            \"Hindi\",\n                            \"Kannada\",\n                            \"Basic English\"\n                        ],\n                        \"assetsRequired\": [\n                            \"Two-wheeler\",\n                            \"Smartphone\",\n                            \"Valid DL\"\n                        ]\n                    },\n                    \"responsibilities\": [\n                        \"Pick up and deliver packages as per route plan\",\n                        \"Collect COD payments from customers\",\n                        \"Maintain delivery logs via mobile app\"\n                    ],\n                    \"salary\": {\n                        \"amount\": 18000,\n                        \"currency\": \"INR\",\n                        \"frequency\": \"monthly\"\n                    },\n                    \"schedule\": {\n                        \"shiftType\": \"day\",\n                        \"hoursPerWeek\": 40,\n                        \"daysOfWeek\": [\n                            \"monday\",\n                            \"tuesday\",\n                            \"wednesday\",\n                            \"thursday\",\n                            \"friday\"\n                        ],\n                        \"startTime\": \"07:00\",\n                        \"endTime\": \"15:30\",\n                        \"overtimeAvailable\": true,\n                        \"weekendWork\": false\n                    },\n                    \"benefits\": [\n                        \"health_insurance\",\n                        \"dental_insurance\",\n                        \"paid_time_off\",\n                        \"workers_compensation\",\n                        \"tools_provided\",\n                        \"uniform_provided\",\n                        \"training_provided\",\n                        \"career_advancement\"\n                    ],\n                    \"postedDate\": \"2025-06-01T10:00:00Z\",\n                    \"validUntil\": \"2025-06-15T23:59:59Z\",\n                    \"metadata\": {\n                        \"tags\": [\n                            \"delivery\",\n                            \"bike\",\n                            \"fresher_friendly\",\n                            \"bangalore\"\n                        ]\n                    },\n                    \"__v\": 0\n                }\n            },\n            \"__v\": 0\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "apply job",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"job_id\": \"JOB-2391-DEL\",\n  \"submitted_on\": \"2025-06-02T14:32:00Z\",\n  \"applicant\": {\n    \"full_name\": \"Arun Kumar\",\n    \"phone_number\": \"+91-9876543211\",\n    \"email\": \"arunkumar89@example.com\"\n  },\n  \"status\": \"PENDING\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/jobs/{{jobId}}/apply",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"jobs",
+						"{{jobId}}",
+						"apply"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "apply job",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"application_id\": \"APP-784532\",\n  \"job_id\": \"JOB-2391-DEL\",\n  \"submitted_on\": \"2025-06-02T14:32:00Z\",\n  \"applicant\": {\n    \"full_name\": \"Arun Kumar\",\n    \"phone_number\": \"+91-9876543211\",\n    \"email\": \"arunkumar89@example.com\",\n    \"date_of_birth\": \"1998-04-15\",\n    \"gender\": \"Male\",\n    \"languages_spoken\": [\"Hindi\", \"Kannada\", \"English\"],\n    \"address\": {\n      \"street\": \"3rd Cross, BTM Layout\",\n      \"city\": \"Bengaluru\",\n      \"state\": \"Karnataka\",\n      \"postal_code\": \"560076\"\n    },\n    \"identification\": {\n      \"aadhaar_number\": \"XXXX-XXXX-1234\",\n      \"driving_license\": \"KA1234567890123\"\n    }\n  },\n  \"documents_uploaded\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/jobs/{{jobId}}/apply",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"jobs",
+								"{{jobId}}",
+								"apply"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "323"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"143-G2Ezidzq08BSfgiIBUBjjpRcP3U\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 15:01:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"api.jobs.apply\",\n    \"ver\": \"1.0\",\n    \"ets\": 1749049282149,\n    \"params\": {\n        \"msgid\": \"b72e19c8-0079-4d62-9602-a3e44ab7a7f1\",\n        \"err\": \"\",\n        \"status\": \"SUCCESSFUL\",\n        \"errmsg\": \"\"\n    },\n    \"responseCode\": \"OK\",\n    \"result\": {\n        \"application\": {\n            \"application_id\": \"APP-856828-0F4B\",\n            \"job_id\": \"JOB-1004-SEC\",\n            \"status\": \"submitted\",\n            \"applied_at\": \"2025-06-04T15:01:22.142Z\"\n        }\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "jobId",
+			"value": "JOB-2391-DEL",
+			"type": "string"
+		}
+	]
+}

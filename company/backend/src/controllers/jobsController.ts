@@ -81,6 +81,7 @@ export const applyToJob = async (req: Request, res: Response, next: any) => {
   try {
     const { job_id } = req.params;
     const job = await Job.findOne({ jobId: job_id });
+    
     if (!job) {
       res.status(404).json(buildResponsePayload({
         id: 'api.jobs.apply',
@@ -94,18 +95,11 @@ export const applyToJob = async (req: Request, res: Response, next: any) => {
       }));
       return;
     }
-    // Prevent duplicate applications (by job_id and applicant email)
-    const existing = await Application.findOne({ job_id, 'applicant.email': req.body.applicant.email });
-    if (existing) {
-      next({
-        status: 409,
-        name: 'DUPLICATE_APPLICATION',
-        message: 'You have already applied to this job.'
-      });
-      return;
-    }
+
     const application_id = `APP-${Math.floor(Math.random() * 1000000)}-${uuidv4().slice(0, 4).toUpperCase()}`;
+    
     const submitted_on = new Date();
+    
     const application = new Application({
       ...req.body,
       application_id,
@@ -113,6 +107,7 @@ export const applyToJob = async (req: Request, res: Response, next: any) => {
       submitted_on
     });
     await application.save();
+    
     res.json(buildResponsePayload({
       id: 'api.jobs.apply',
       result: {

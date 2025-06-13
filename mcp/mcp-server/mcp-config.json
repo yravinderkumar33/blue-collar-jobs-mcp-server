@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "blue-collar-jobs": {
+      "command": "node",
+      "args": ["./dist/index.js"],
+      "env": {
+        "JOBS_API_URL": "http://localhost:6000"
+      }
+    }
+  }
+} 

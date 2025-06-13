@@ -1,0 +1,40 @@
+{
+  "name": "mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for Blue Collar Jobs Platform",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+  "build": "tsc && chmod 755 build/index.js",
+    "test": "ts-node src/test.ts",
+    "test:components": "npx ts-node src/test.ts",
+    "dev": "ts-node --watch src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "jobs",
+    "blue-collar",
+    "employment"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@types/axios": "^0.14.4",
+    "axios": "^1.9.0",
+    "express": "^5.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.29",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "bin": {
+    "jobs": "build/index.js"
+  },
+  "files": [
+    "build"
+  ]
+}
